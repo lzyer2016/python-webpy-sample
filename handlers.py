@@ -20,6 +20,7 @@ class api:
 class users:
     def GET(self,name="users"):
         try:
+            userid = ''
             if name != "users":
                 if name.startswith('/'):
                     userid = name[1:]
